@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3319860F227AC6C300EE2D5F /* SaveTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3319860E227AC6C300EE2D5F /* SaveTrackViewController.swift */; };
+		33198611227AC99C00EE2D5F /* SaveTrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33198610227AC99C00EE2D5F /* SaveTrackViewModel.swift */; };
+		33660724224BEE3900D922BC /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33660723224BEE3900D922BC /* Property.swift */; };
+		33660726224BEE7900D922BC /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33660725224BEE7900D922BC /* Signal.swift */; };
+		33660729224BEF8A00D922BC /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33660728224BEF8A00D922BC /* LocationService.swift */; };
+		3369270C227B1293006EA225 /* MapViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369270B227B1293006EA225 /* MapViewRouter.swift */; };
+		3369270E227B12AA006EA225 /* SaveTrackRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369270D227B12AA006EA225 /* SaveTrackRouter.swift */; };
+		3385D25422495711004EEF0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3385D25322495711004EEF0E /* AppDelegate.swift */; };
+		3385D25922495711004EEF0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3385D25722495711004EEF0E /* Main.storyboard */; };
+		3385D25C22495711004EEF0E /* TinyMVVMDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3385D25A22495711004EEF0E /* TinyMVVMDemo.xcdatamodeld */; };
+		3385D25E22495713004EEF0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3385D25D22495713004EEF0E /* Assets.xcassets */; };
+		3385D26122495713004EEF0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3385D25F22495713004EEF0E /* LaunchScreen.storyboard */; };
+		3385D26C22495713004EEF0E /* TinyMVVMDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3385D26B22495713004EEF0E /* TinyMVVMDemoTests.swift */; };
+		33872EDE224AA66100B191A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33872EDD224AA66100B191A5 /* BaseViewController.swift */; };
+		33872EE0224AA69B00B191A5 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33872EDF224AA69B00B191A5 /* BaseRouter.swift */; };
+		33872F11224AAF0F00B191A5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33872F0F224AAF0F00B191A5 /* MapViewController.swift */; };
+		33872F12224AAF0F00B191A5 /* PlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33872F10224AAF0F00B191A5 /* PlaceListViewController.swift */; };
+		33AE825D228833E400A3B221 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AE8257228833E400A3B221 /* Note+CoreDataClass.swift */; };
+		33AE825E228833E400A3B221 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AE8258228833E400A3B221 /* Note+CoreDataProperties.swift */; };
+		33AE825F228833E400A3B221 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AE8259228833E400A3B221 /* Location+CoreDataClass.swift */; };
+		33AE8260228833E400A3B221 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AE825A228833E400A3B221 /* Location+CoreDataProperties.swift */; };
+		33AE8261228833E400A3B221 /* Track+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AE825B228833E400A3B221 /* Track+CoreDataClass.swift */; };
+		33AE8262228833E400A3B221 /* Track+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AE825C228833E400A3B221 /* Track+CoreDataProperties.swift */; };
+		33DB56EE2250C9BA00E4CA8C /* DataStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DB56ED2250C9BA00E4CA8C /* DataStorageManager.swift */; };
+		33DB56F52250D47900E4CA8C /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DB56F42250D47900E4CA8C /* MapViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3385D26822495713004EEF0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3385D24822495711004EEF0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3385D24F22495711004EEF0E;
+			remoteInfo = TinyMVVMDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3319860E227AC6C300EE2D5F /* SaveTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTrackViewController.swift; sourceTree = "<group>"; };
+		33198610227AC99C00EE2D5F /* SaveTrackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTrackViewModel.swift; sourceTree = "<group>"; };
+		33660723224BEE3900D922BC /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		33660725224BEE7900D922BC /* Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		33660728224BEF8A00D922BC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		3369270B227B1293006EA225 /* MapViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRouter.swift; sourceTree = "<group>"; };
+		3369270D227B12AA006EA225 /* SaveTrackRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTrackRouter.swift; sourceTree = "<group>"; };
+		3385D25022495711004EEF0E /* TinyMVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyMVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3385D25322495711004EEF0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3385D25822495711004EEF0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3385D25B22495711004EEF0E /* TinyMVVMDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TinyMVVMDemo.xcdatamodel; sourceTree = "<group>"; };
+		3385D25D22495713004EEF0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3385D26022495713004EEF0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3385D26222495713004EEF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3385D26722495713004EEF0E /* TinyMVVMDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyMVVMDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3385D26B22495713004EEF0E /* TinyMVVMDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyMVVMDemoTests.swift; sourceTree = "<group>"; };
+		3385D26D22495713004EEF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33872EDD224AA66100B191A5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		33872EDF224AA69B00B191A5 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		33872F0F224AAF0F00B191A5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		33872F10224AAF0F00B191A5 /* PlaceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceListViewController.swift; sourceTree = "<group>"; };
+		33AE8257228833E400A3B221 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		33AE8258228833E400A3B221 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		33AE8259228833E400A3B221 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataClass.swift"; path = "../Model/CoreDataClasses/Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		33AE825A228833E400A3B221 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		33AE825B228833E400A3B221 /* Track+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Track+CoreDataClass.swift"; path = "../Model/CoreDataClasses/Track+CoreDataClass.swift"; sourceTree = "<group>"; };
+		33AE825C228833E400A3B221 /* Track+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Track+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		33DB56ED2250C9BA00E4CA8C /* DataStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorageManager.swift; sourceTree = "<group>"; };
+		33DB56F42250D47900E4CA8C /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3385D24D22495711004EEF0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3385D26422495713004EEF0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33660727224BEF7100D922BC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				33DB56ED2250C9BA00E4CA8C /* DataStorageManager.swift */,
+				33660728224BEF8A00D922BC /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		33660743224C0B0700D922BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33660744224C0B1600D922BC /* CoreDataClasses */,
+				33DB56F42250D47900E4CA8C /* MapViewModel.swift */,
+				33198610227AC99C00EE2D5F /* SaveTrackViewModel.swift */,
+			);
+			name = Model;
+			path = ../Model;
+			sourceTree = "<group>";
+		};
+		33660744224C0B1600D922BC /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreDataClasses;
+			sourceTree = "<group>";
+		};
+		33692709227B125E006EA225 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				33872F0F224AAF0F00B191A5 /* MapViewController.swift */,
+				33872F10224AAF0F00B191A5 /* PlaceListViewController.swift */,
+				3319860E227AC6C300EE2D5F /* SaveTrackViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3369270A227B1273006EA225 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				3369270B227B1293006EA225 /* MapViewRouter.swift */,
+				3369270D227B12AA006EA225 /* SaveTrackRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		3385D24722495711004EEF0E = {
+			isa = PBXGroup;
+			children = (
+				33DB56EF2250C9D100E4CA8C /* DataStorage */,
+				3385D25222495711004EEF0E /* TinyMVVMDemo */,
+				3385D26A22495713004EEF0E /* TinyMVVMDemoTests */,
+				3385D25122495711004EEF0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3385D25122495711004EEF0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3385D25022495711004EEF0E /* TinyMVVMDemo.app */,
+				3385D26722495713004EEF0E /* TinyMVVMDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3385D25222495711004EEF0E /* TinyMVVMDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3385D27622495C27004EEF0E /* Base */,
+				33660727224BEF7100D922BC /* Services */,
+				33660743224C0B0700D922BC /* Model */,
+				3385D25322495711004EEF0E /* AppDelegate.swift */,
+				33872F13224AAF2900B191A5 /* UI */,
+				3385D25722495711004EEF0E /* Main.storyboard */,
+				3385D25D22495713004EEF0E /* Assets.xcassets */,
+				3385D25F22495713004EEF0E /* LaunchScreen.storyboard */,
+				3385D26222495713004EEF0E /* Info.plist */,
+			);
+			path = TinyMVVMDemo;
+			sourceTree = "<group>";
+		};
+		3385D26A22495713004EEF0E /* TinyMVVMDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3385D26B22495713004EEF0E /* TinyMVVMDemoTests.swift */,
+				3385D26D22495713004EEF0E /* Info.plist */,
+			);
+			path = TinyMVVMDemoTests;
+			sourceTree = "<group>";
+		};
+		3385D27622495C27004EEF0E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				33872EDD224AA66100B191A5 /* BaseViewController.swift */,
+				33872EDF224AA69B00B191A5 /* BaseRouter.swift */,
+				33660723224BEE3900D922BC /* Property.swift */,
+				33660725224BEE7900D922BC /* Signal.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		33872F13224AAF2900B191A5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3369270A227B1273006EA225 /* Routers */,
+				33692709227B125E006EA225 /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		33DB56EF2250C9D100E4CA8C /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				3385D25A22495711004EEF0E /* TinyMVVMDemo.xcdatamodeld */,
+				33AE8257228833E400A3B221 /* Note+CoreDataClass.swift */,
+				33AE8258228833E400A3B221 /* Note+CoreDataProperties.swift */,
+				33AE8259228833E400A3B221 /* Location+CoreDataClass.swift */,
+				33AE825A228833E400A3B221 /* Location+CoreDataProperties.swift */,
+				33AE825B228833E400A3B221 /* Track+CoreDataClass.swift */,
+				33AE825C228833E400A3B221 /* Track+CoreDataProperties.swift */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3385D24F22495711004EEF0E /* TinyMVVMDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3385D27022495713004EEF0E /* Build configuration list for PBXNativeTarget "TinyMVVMDemo" */;
+			buildPhases = (
+				3385D24C22495711004EEF0E /* Sources */,
+				3385D24D22495711004EEF0E /* Frameworks */,
+				3385D24E22495711004EEF0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyMVVMDemo;
+			productName = TinyMVVMDemo;
+			productReference = 3385D25022495711004EEF0E /* TinyMVVMDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3385D26622495713004EEF0E /* TinyMVVMDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3385D27322495713004EEF0E /* Build configuration list for PBXNativeTarget "TinyMVVMDemoTests" */;
+			buildPhases = (
+				3385D26322495713004EEF0E /* Sources */,
+				3385D26422495713004EEF0E /* Frameworks */,
+				3385D26522495713004EEF0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3385D26922495713004EEF0E /* PBXTargetDependency */,
+			);
+			name = TinyMVVMDemoTests;
+			productName = TinyMVVMDemoTests;
+			productReference = 3385D26722495713004EEF0E /* TinyMVVMDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3385D24822495711004EEF0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					3385D24F22495711004EEF0E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3385D26622495713004EEF0E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3385D24F22495711004EEF0E;
+					};
+				};
+			};
+			buildConfigurationList = 3385D24B22495711004EEF0E /* Build configuration list for PBXProject "TinyMVVMDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3385D24722495711004EEF0E;
+			productRefGroup = 3385D25122495711004EEF0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3385D24F22495711004EEF0E /* TinyMVVMDemo */,
+				3385D26622495713004EEF0E /* TinyMVVMDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3385D24E22495711004EEF0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3385D26122495713004EEF0E /* LaunchScreen.storyboard in Resources */,
+				3385D25E22495713004EEF0E /* Assets.xcassets in Resources */,
+				3385D25922495711004EEF0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3385D26522495713004EEF0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3385D24C22495711004EEF0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33660724224BEE3900D922BC /* Property.swift in Sources */,
+				33872F12224AAF0F00B191A5 /* PlaceListViewController.swift in Sources */,
+				33872F11224AAF0F00B191A5 /* MapViewController.swift in Sources */,
+				33872EDE224AA66100B191A5 /* BaseViewController.swift in Sources */,
+				3369270C227B1293006EA225 /* MapViewRouter.swift in Sources */,
+				33AE8261228833E400A3B221 /* Track+CoreDataClass.swift in Sources */,
+				33872EE0224AA69B00B191A5 /* BaseRouter.swift in Sources */,
+				33AE825F228833E400A3B221 /* Location+CoreDataClass.swift in Sources */,
+				33AE8262228833E400A3B221 /* Track+CoreDataProperties.swift in Sources */,
+				33DB56EE2250C9BA00E4CA8C /* DataStorageManager.swift in Sources */,
+				33660726224BEE7900D922BC /* Signal.swift in Sources */,
+				3385D25422495711004EEF0E /* AppDelegate.swift in Sources */,
+				3319860F227AC6C300EE2D5F /* SaveTrackViewController.swift in Sources */,
+				33AE8260228833E400A3B221 /* Location+CoreDataProperties.swift in Sources */,
+				33AE825E228833E400A3B221 /* Note+CoreDataProperties.swift in Sources */,
+				33DB56F52250D47900E4CA8C /* MapViewModel.swift in Sources */,
+				33660729224BEF8A00D922BC /* LocationService.swift in Sources */,
+				33198611227AC99C00EE2D5F /* SaveTrackViewModel.swift in Sources */,
+				33AE825D228833E400A3B221 /* Note+CoreDataClass.swift in Sources */,
+				3385D25C22495711004EEF0E /* TinyMVVMDemo.xcdatamodeld in Sources */,
+				3369270E227B12AA006EA225 /* SaveTrackRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3385D26322495713004EEF0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3385D26C22495713004EEF0E /* TinyMVVMDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3385D26922495713004EEF0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3385D24F22495711004EEF0E /* TinyMVVMDemo */;
+			targetProxy = 3385D26822495713004EEF0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3385D25722495711004EEF0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3385D25822495711004EEF0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3385D25F22495713004EEF0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3385D26022495713004EEF0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3385D26E22495713004EEF0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3385D26F22495713004EEF0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3385D27122495713004EEF0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55M6PUQBH7;
+				INFOPLIST_FILE = TinyMVVMDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.TinyMVVMDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3385D27222495713004EEF0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55M6PUQBH7;
+				INFOPLIST_FILE = TinyMVVMDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.TinyMVVMDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3385D27422495713004EEF0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55M6PUQBH7;
+				INFOPLIST_FILE = TinyMVVMDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.TinyMVVMDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinyMVVMDemo.app/TinyMVVMDemo";
+			};
+			name = Debug;
+		};
+		3385D27522495713004EEF0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55M6PUQBH7;
+				INFOPLIST_FILE = TinyMVVMDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.TinyMVVMDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinyMVVMDemo.app/TinyMVVMDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3385D24B22495711004EEF0E /* Build configuration list for PBXProject "TinyMVVMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3385D26E22495713004EEF0E /* Debug */,
+				3385D26F22495713004EEF0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3385D27022495713004EEF0E /* Build configuration list for PBXNativeTarget "TinyMVVMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3385D27122495713004EEF0E /* Debug */,
+				3385D27222495713004EEF0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3385D27322495713004EEF0E /* Build configuration list for PBXNativeTarget "TinyMVVMDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3385D27422495713004EEF0E /* Debug */,
+				3385D27522495713004EEF0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3385D25A22495711004EEF0E /* TinyMVVMDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3385D25B22495711004EEF0E /* TinyMVVMDemo.xcdatamodel */,
+			);
+			currentVersion = 3385D25B22495711004EEF0E /* TinyMVVMDemo.xcdatamodel */;
+			path = TinyMVVMDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3385D24822495711004EEF0E /* Project object */;
+}
