@@ -106,19 +106,11 @@
 		33660743224C0B0700D922BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				33660744224C0B1600D922BC /* CoreDataClasses */,
 				33DB56F42250D47900E4CA8C /* MapViewModel.swift */,
 				33198610227AC99C00EE2D5F /* SaveTrackViewModel.swift */,
 			);
 			name = Model;
 			path = ../Model;
-			sourceTree = "<group>";
-		};
-		33660744224C0B1600D922BC /* CoreDataClasses */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreDataClasses;
 			sourceTree = "<group>";
 		};
 		33692709227B125E006EA225 /* ViewControllers */ = {
